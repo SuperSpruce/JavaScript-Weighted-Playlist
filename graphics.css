@@ -1,0 +1,13 @@
+body {
+    background-color: #111111;
+    color: #dddddd;
+    font-size: 24px;
+}
+
+.big {
+    font-size: 48px;
+}
+
+#volumeSlider {
+    width: 100%;
+}
