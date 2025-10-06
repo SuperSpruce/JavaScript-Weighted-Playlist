@@ -1,5 +1,7 @@
+var workoutMode = false;
+
 class WeightedRandomPicker {
-    constructor(options) {
+    constructor(options, mode = 0) {
       this.options = options;
       this.names = [];
       this.cumulativeWeights = [];
@@ -49,9 +51,17 @@ function readCSV(input) {
 function setSongPicker(songlist) {
     let a = [];
     let temp;
+    let indivWeight;
     for(let i=0; i<songlist.length; i++) {
-        temp = {option: i, names: songlist[i][0], weight: songlist[i][1], diff: songlist[i][2]};
-        a.push(temp);
+      if(workoutMode) {
+        if(songList[i][3] == 0)
+          continue;
+        indivWeight = Math.floor(songList[i][1] * songList[i][3] / 10);
+      }
+      else 
+        indivWeight = songList[i][1];
+      temp = {option: i, names: songlist[i][0], weight: indivWeight, diff: songlist[i][2]};
+      a.push(temp);
     }
     let b = new WeightedRandomPicker(a);
     return b;
@@ -93,6 +103,14 @@ function returnFrequencyData(rarityData = [2000, 10000, 30000, 80000, 200000, 1e
 }
 
 
+function getModifiedWeight() {
+  let weight = songList[currentSongID][1];
+  if(workoutMode)
+    weight = Math.floor(weight * songList[currentSongID][3] / 10);
+  return weight;
+}
+
+
 function getRarityRank() {
   // Use binary search to find the song
   let low = 0;
@@ -100,7 +118,8 @@ function getRarityRank() {
 
   while (low < high) {
     const mid = Math.floor((low + high) / 2);
-    if (songList[currentSongID][1] < sortedSongs[mid][0]) {
+    let weight = getModifiedWeight();
+    if (weight < sortedSongs[mid][0]) {
       high = mid;
     } else {
       low = mid + 1;
@@ -120,13 +139,13 @@ function getWeightRank() {
 
   while (low < high) {
     const mid = Math.floor((low + high) / 2);
-    if (songList[currentSongID][1] < sortedSongs[mid][0]) {
+    let weight = getModifiedWeight();
+    if (weight < sortedSongs[mid][0]) {
       high = mid;
     } else {
       low = mid + 1;
     }
   }
-  console.log(low);
   return sortedSongs[low-1][1] / songPicker.totalWeight;
 }
 
@@ -191,6 +210,6 @@ function inverseStandardNormalCDF(p) {
   }
 }
 
-let songList = readCSV(songWeights);
+const songList = readCSV(songWeights);
 var songPicker = setSongPicker(songList);
-const sortedSongs = returnSortedOptions(songPicker.options);
+var sortedSongs = returnSortedOptions(songPicker.options);

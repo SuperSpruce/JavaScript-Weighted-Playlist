@@ -59,7 +59,7 @@ volumeSlider.addEventListener('input', (event) => {
 });
 
 function volumeModifier(v) {
-    rDisplay.innerHTML = v;
+    rDisplay.innerHTML = (100*Number(v)).toFixed(0) + "%";
     return v*v;
 }
 
@@ -111,7 +111,7 @@ async function playTrack(buffer) {
     };
 
     let offset = 0;
-    console.log(difficultyID);
+    //console.log(difficultyID);
     if(difficultyID == -8) {
         offset = 21;
     }
@@ -151,7 +151,7 @@ async function skipToNextTrack() {
     frames = 0;
     difficultyID = Number(songList[currentSongID][2]);
     console.log(songList[currentSongID][0]);
-    console.log("  Street Triple weight: " + Number(songList[currentSongID][1]));
+    //console.log("  Street Triple weight: " + Number(songList[currentSongID][1]));
     if(difficultyID >= 0) {
         difficulty = difficultyID;
     }
@@ -188,6 +188,12 @@ async function start() {
         sourceNode = audioContext.createMediaElementSource(audio);
         gainNode = audioContext.createGain();
         gainNode.connect(audioContext.destination);
+        if(workoutMode) {
+            spread /= 2;
+            songPicker = setSongPicker(songList);
+            sortedSongs = returnSortedOptions(songPicker.options);
+            console.log("Enabling workout mode!");
+        }
     }
 
     let firstSongs = pickSongs(2);
@@ -209,23 +215,47 @@ async function start() {
     await preloadNextTrack(nextSongID);
 }
 
+async function startWorkout() {
+    workoutMode = true;
+    start();
+}
+
+function stop() {
+    sourceNode.stop();
+    sourceNode = null;
+    gainNode = null;
+    audioContext = null;
+}
+
 
 
 function setPlaybackSpeed() {
-    if(m.random() < 1/11)
+    if(m.random() < 1/11 && !workoutMode)
         halfSpeed = 1;
+    else if(m.random() > 255/256) {
+        halfSpeed = -1;
+    }
     else {halfSpeed = 0;}
     playbackSpeed = Math.pow(2, inverseStandardNormalCDF(m.random())/12*spread);
     let semitones = (12*Math.log2(playbackSpeed));
+    let addendumStr = "";
+    let rarityModifier = 1;
     if(halfSpeed == 1) {
         playbackSpeed /= 2;
+        addendumStr = ", half speed";
+        rarityModifier = 10;
+    }
+    else if(halfSpeed == -1) {
+        playbackSpeed *= 2;
+        addendumStr = ", double speed!";
+        rarityModifier = 255;
     }
     audio.preservesPitch = false;
     playbackSemitonesDisplay.innerHTML = semitones.toFixed(2);
     let semitoneC = semitones/spread;
     if(Math.abs(semitoneC) > 2.5) {
         let str = "Rare semitone modification! " + semitones.toFixed(2) + " semitones";
-        str += halfSpeed == 1 ? ", half speed" : "";
+        str += addendumStr;
         console.log(str);
     }
     let red = Math.min(221, 221+60*semitoneC);
@@ -233,9 +263,9 @@ function setPlaybackSpeed() {
     let blue = Math.min(221, 221-60*semitoneC);
     playbackColor.style.color = `rgb(${red}, ${green}, ${blue})`;
     playbackRateDisplay.innerHTML = playbackSpeed.toFixed(3);
-    halfSpeedDisplay.innerHTML = halfSpeed == 1 ? ", half speed" : "";
+    halfSpeedDisplay.innerHTML = addendumStr;
     let modeRR = Number(songList[currentSongID][2]) != 0 ? 1 : (mode == 0 ? 1 : 1/mode)
-    relativeRarityDisplay2.innerHTML = (modeRR*(halfSpeed?10:1)*1000000/songList[currentSongID][1]/Math.exp(-1/2*semitoneC*semitoneC)).toFixed(1);
+    relativeRarityDisplay2.innerHTML = (modeRR*rarityModifier*1000000/getModifiedWeight()/Math.exp(-1/2*semitoneC*semitoneC)).toFixed(1);
     return playbackSpeed;
 }
 
@@ -244,23 +274,29 @@ function setPlaybackSpeed() {
 function updateUI() {
     nameDisplay.innerHTML = difficultyID < -100 ? nameDisplay.innerHTML : songList[currentSongID][0];
     let weight = songList[currentSongID][1];
+    if(workoutMode) {
+        weight *= songList[currentSongID][3] / 10;
+        weight = Math.floor(weight);
+    }
+    console.log("Street Triple weight: " + weight);
     let fabledCheck = songList[currentSongID][2];
+    let workoutModifer = workoutMode ? 2/5 : 1;
     weightDisplay.innerHTML = numberWithCommas(weight);
     relativeRarityDisplay.innerHTML = (1000000/weight).toFixed(1);
     rarityRankDisplay.innerHTML = (100*(1-getRarityRank2())).toFixed(0);
     percentDisplay.innerHTML = 0;
     if(fabledCheck == -99) {rarityDisplay.innerHTML = "Fabled"; rarityDisplay.style.color = `rgb(255, 55, 155)`;}
-    else if(weight > 200000) {rarityDisplay.innerHTML = "Common"; rarityDisplay.style.color = `rgb(221, 221, 221)`;}
-    else if(weight > 80000) {rarityDisplay.innerHTML = "Uncommon"; rarityDisplay.style.color = `rgb(100, 220, 100)`;}
-    else if(weight > 30000) {rarityDisplay.innerHTML = "Rare"; rarityDisplay.style.color = `rgb(80, 100, 240)`;}
-    else if(weight > 10000) {rarityDisplay.innerHTML = "Epic"; rarityDisplay.style.color = `rgb(150, 30, 250)`;}
-    else if(weight > 2000) {rarityDisplay.innerHTML = "LEGENDARY"; rarityDisplay.style.color = `rgb(255, 100, 0)`;}
+    else if(weight > 200000 * workoutModifer) {rarityDisplay.innerHTML = "Common"; rarityDisplay.style.color = `rgb(221, 221, 221)`;}
+    else if(weight > 80000 * workoutModifer) {rarityDisplay.innerHTML = "Uncommon"; rarityDisplay.style.color = `rgb(100, 220, 100)`;}
+    else if(weight > 30000 * workoutModifer) {rarityDisplay.innerHTML = "Rare"; rarityDisplay.style.color = `rgb(80, 100, 240)`;}
+    else if(weight > 10000 * workoutModifer) {rarityDisplay.innerHTML = "Epic"; rarityDisplay.style.color = `rgb(150, 30, 250)`;}
+    else if(weight > 2000 * workoutModifer) {rarityDisplay.innerHTML = "LEGENDARY"; rarityDisplay.style.color = `rgb(255, 100, 0)`;}
     else {rarityDisplay.innerHTML = "MYTHICAL";}
     let weightRankD = getWeightRank();
-    if(weightRankD > 0.1) {weightRankDisplay.innerHTML = (100*(1-getWeightRank())).toFixed(0);}
-    else if(weightRankD > 0.01) {weightRankDisplay.innerHTML = (100*(1-getWeightRank())).toFixed(1);}
-    else if(weightRankD > 0.001) {weightRankDisplay.innerHTML = (100*(1-getWeightRank())).toFixed(2);}
-    else {weightRankDisplay.innerHTML = (100*(1-getWeightRank())).toFixed(3);}
+    if(weightRankD > 0.1) {weightRankDisplay.innerHTML = (100*(1-weightRankD)).toFixed(0);}
+    else if(weightRankD > 0.01) {weightRankDisplay.innerHTML = (100*(1-weightRankD)).toFixed(1);}
+    else if(weightRankD > 0.001) {weightRankDisplay.innerHTML = (100*(1-weightRankD)).toFixed(2);}
+    else {weightRankDisplay.innerHTML = (100*(1-weightRankD)).toFixed(3);}
 }
 
 function setDifficultyColor() {
