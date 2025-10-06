@@ -1,4 +1,6 @@
 *.mp3
 *.ods
 .vs/
+Music/
+Databases/
 music.txt
