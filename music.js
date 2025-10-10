@@ -130,7 +130,7 @@ Chemical Imbalance - Nighthawk22.mp3:35022:0:2
 Chess Titans Capture.mp3:390000:0:0
 Chess Titans Check Checkity Check.mp3:243470:0:0
 Chess Titans Lose.mp3:12500:0:0
-Chess Titans Move.mp3:1880698:0:0
+Chess Titans Move.mp3:1853327:0:0
 Chess Titans Win.mp3:12500:0:0
 Chicken Soup.mp3:39086:0:0
 Children Yay! - Sound Effect.mp3:25125:0:0
@@ -225,10 +225,55 @@ Different Trains (Part 2).mp4.mp3:15941:0:0
 Different Trains (Part3).mp4.mp3:15046:0:0
 Dimension - Creo.mp3:270260:-15:5
 Dimrain47 - Surface.mp3:160080:-17:10
-Dimrain47 - The Falling Mysts.mp3:454321:321:10
+Dimrain47 - The Falling Mysts.mp3:654321:321:10
 Dimrain47 - The Final Hour.mp3:122400:240:10
 Ding - Sound Effects YouTube.mp3:199999:0:0
 DJ Striden - Level X [Miracle Release] - DJ Striden.mp3:24410:0:3
+DM DOKURO - The Tale of a Cruel World - 01 The Tale of a Cruel World.mp3:14723:0:4
+DM DOKURO - The Tale of a Cruel World - 02 Guardian of the Former Seas.mp3:12945:0:4
+DM DOKURO - The Tale of a Cruel World - 03 Infestation.mp3:11945:0:4
+DM DOKURO - The Tale of a Cruel World - 04 Blood Coagulant.mp3:9623:0:4
+DM DOKURO - The Tale of a Cruel World - 05 The Filthy Mind.mp3:13723:0:4
+DM DOKURO - The Tale of a Cruel World - 06 Return to Slime.mp3:7623:0:4
+DM DOKURO - The Tale of a Cruel World - 07 Antarctic Reinforcement.mp3:8623:0:4
+DM DOKURO - The Tale of a Cruel World - 08 Left Alone.mp3:10623:0:4
+DM DOKURO - The Tale of a Cruel World - 09 Outcast of the Sulphurous Seas.mp3:4723:0:4
+DM DOKURO - The Tale of a Cruel World - 10 Raw, Unfiltered Calamity.mp3:8945:0:4
+DM DOKURO - The Tale of a Cruel World - 11 Silence Before the Storms.mp3:12623:0:4
+DM DOKURO - The Tale of a Cruel World - 12 The Leviathan Trilogy.mp3:5623:0:4
+DM DOKURO - The Tale of a Cruel World - 13 Cosmic Disgust.mp3:7723:0:4
+DM DOKURO - The Tale of a Cruel World - 14 Interstellar Stomper.mp3:12723:0:4
+DM DOKURO - The Tale of a Cruel World - 15 Pest of the Cosmos.mp3:10623:0:4
+DM DOKURO - The Tale of a Cruel World - 16 Fly of Beelzebub.mp3:9454:0:4
+DM DOKURO - The Tale of a Cruel World - 17 Open Frenzy.mp3:11723:0:4
+DM DOKURO - The Tale of a Cruel World - 18 Storms Before the Catastrophes.mp3:10723:0:4
+DM DOKURO - The Tale of a Cruel World - 19 Unholy Ambush.mp3:9723:0:4
+DM DOKURO - The Tale of a Cruel World - 20 Unholy Insurgency.mp3:10945:0:4
+DM DOKURO - The Tale of a Cruel World - 21 Feral Amalgamation.mp3:6723:0:4
+DM DOKURO - The Tale of a Cruel World - 22 Toxic Wisdom.mp3:11523:0:4
+DM DOKURO - The Tale of a Cruel World - 23 Servants of the Scourge.mp3:14945:0:4
+DM DOKURO - The Tale of a Cruel World - 24 Scourge of the Universe.mp3:13945:0:4
+DM DOKURO - The Tale of a Cruel World - 25 Universal Collapse.mp3:5723:0:4
+DM DOKURO - The Tale of a Cruel World - 26 Murderswarm.mp3:10523:0:4
+DM DOKURO - The Tale of a Cruel World - 27 Infernal Catharsis (Rebirth).mp3:3623:0:4
+DM DOKURO - The Tale of a Cruel World - 28 Roar of the Jungle Dragon.mp3:3523:0:4
+DM DOKURO - The Tale of a Cruel World - 29 The Step Below Hell.mp3:9423:0:4
+DM DOKURO - The Tale of a Cruel World - 30 Heaven's Hell-Sent Gift.mp3:8423:0:4
+DM DOKURO - The Tale of a Cruel World - 31 The Heaven-Sent Abomination.mp3:6423:0:4
+DM DOKURO - The Tale of a Cruel World - 32 Treasures Within The Abomination.mp3:4423:0:4
+DM DOKURO - The Tale of a Cruel World - 33 wasteland.mp3:7945:0:0
+DM DOKURO - The Tale of a Cruel World - 34 sanctuary.mp3:6945:0:0
+DM DOKURO - The Tale of a Cruel World - 35 Hadopelagic Pressure.mp3:5423:0:4
+DM DOKURO - The Tale of a Cruel World - 36 void.mp3:5945:0:0
+DM DOKURO - The Tale of a Cruel World - 37 Threats of the Ocean Floor.mp3:14723:0:4
+DM DOKURO - The Tale of a Cruel World - 38 Catastrophes Before the Calamity.mp3:3423:0:4
+DM DOKURO - The Tale of a Cruel World - 39 Stained, Brutal Calamity.mp3:2523:0:4
+DM DOKURO - The Tale of a Cruel World - 40 Blessing of the Moon.mp3:2423:0:4
+DM DOKURO - The Tale of a Cruel World - 41 Guardian of the Former Seas (8-bit Mix).mp3:2945:0:4
+DM DOKURO - The Tale of a Cruel World - 42 Open Frenzy (16-bit Mix).mp3:2723:0:4
+DM DOKURO - The Tale of a Cruel World - 43 Antarctic Reinforcement (Structured Mix).mp3:2623:0:4
+DM DOKURO - The Tale of a Cruel World - 44 Siren's Call (Seafoam Mix).mp3:1723:0:4
+DM DOKURO - The Tale of a Cruel World - 45 Scourge of the Universe (Eulogy for the Ego).mp3:3945:0:0
 Dodo - CHOMPO & meganeko.mp3:12190:0:5
 Don't Stop Believin'.mp3:24988:0:0
 Double Kill Sound Effect.mp3:30002:0:0
@@ -254,7 +299,6 @@ Fracture (WcropoliX song).mp3:123450:333:10
 Frag Out.mp3:20150:0:2
 Freedom Dive.mp3:108801:408:10
 Frontlines.mp3:26074:0:10
-Fly of Beelzebub - Theme of The Plaguebringer Goliath - Terraria Calamity Mod Music.mp3:9454:0:10
 Galaxy Collapse.mp3:1454:0:2
 Galaxy Collapse (original).mp3:4540:0:2
 Galaxy Collapse 1-1.mp3:211454:0:2
@@ -333,13 +377,11 @@ GhostBusters Theme Song.mp3:20446:0:0
 Giorno's Theme (Jay D Remix).mp3:25135:0:10
 Goblins from Mars - Cold Blooded Love (ft. Krista Marina).mp3:30546:0:10
 Goblins from Mars - Give Me Candy.mp3:50546:0:10
-Goblins from Mars - King Taco.mp3:5546:-99:10
+Goblins from Mars - King Taco.mp3:6546:-99:10
 Goblins from Mars - Never Coming Down (feat. Krista Marina).mp3:10546:0:10
 Going Down by Jake Chudnow [HD].mp3:31122:0:0
 Goldberg Variations, Aria Da Capo.mp3:75741:0:0
 Graze the Roof - Plants vs. Zombies Soundtrack - Laura Shigihara.mp3:26380:0:0
-Guardian of the Former Seas (8-Bit Mix) - Terraria Calamity Mod Music EXTRA.mp3:2789:0:10
-Guardian of The Former Seas - Theme of Desert Scourge - Terraria Calamity Mod Music.mp3:13945:0:10
 Harry Potter - Expecto Patronum (Goblins From Mars Trap Remix).mp3:20546:0:10
 Harry Potter Theme Song 1.mp3:11610:0:0
 Harry Potter Theme Song 2.mp3:10610:0:0
@@ -380,7 +422,6 @@ In the Hall of the Mountain King (Grieg).mp3:33333:0:5
 In the Hall of the Mountain King - Impossible Piano Remix Black MIDI - Sir Spork.mp3:6700:0:5
 In the Hall of the Mountain King - Impossible Piano Remix Black MIDI but sped up.mp3:3300:0:5
 Infernoplex - Dimrain47.mp3:302010:250:10
-Infestation - DM DOKURO.mp3:8945:0:10
 Intervals.mp3:25086:0:0
 Iron God Sakupen Hell Yes RMX (long).mp3:66:0:1
 Iron God Sakupen Hell Yes RMX (short).mp3:166669:750:1
@@ -1175,7 +1216,6 @@ Press Start.mp3:28500:30:10
 Proof of a Hero (Old Version) [From Monster Hunter] - FalKKonE.mp3:5091:0:10
 quack.mp3:34365:0:0
 R1 acceleration jump and wheelie.mp3:18000:1000:0
-Raw, Unfiltered Calamity - DM DOKURO.mp3:11945:0:10
 Reality Check Through the Skull - DM DOKURO.mp3:4945:0:10
 Realm Grinder Evil Alignment - Visioni di fiamma.mp3:19187:0:2
 Realm Grinder Good Alignment - Cavalcando nel sole nascente.mp3:17187:0:0
@@ -1267,8 +1307,6 @@ Sad Violin - MLG Sound Effects (full).mp3:16605:0:0
 Sad Violin - MLG Sound Effects (truncated).mp3:33210:0:0
 Schubert Moment Musical (no 5).mp3:41836:0:9
 Scorching Blade - Glavenus (From Monster Hunter Generations).mp3:4091:0:10
-Scourge of The Universe - Theme of Devourer of Gods - Terraria Calamity Mod Music.mp3:14945:0:10
-Servants of The Scourge - Theme of The Sentinels of The Devourer - Terraria Calamity Mod Music.mp3:9945:0:10
 SHIKIMO - & DOOMROAR - Getaway.mp3:11236:0:0
 Shootin Stars.mp3:8862:-99:10
 Shovel Knight [OST] - An Underlying Problem (The Lost City).mp3:23751:0:4
@@ -1360,6 +1398,33 @@ Test.mp3:18086:0:0
 The 7th Day - TMM43.mp3:28043:0:10
 The Blue Danube (full).mp3:10456:0:0
 The Blue Danube (truncated).mp3:90456:0:1
+The Beatles - 1 - 01 - Love Me Do.mp3:62281:0:0
+The Beatles - 1 - 02 - From Me To You.mp3:58281:0:0
+The Beatles - 1 - 03 - She Loves You.mp3:60281:0:0
+The Beatles - 1 - 04 - I Want To Hold Your Hand.mp3:56281:0:0
+The Beatles - 1 - 05 - Can't Buy Me Love.mp3:54281:0:0
+The Beatles - 1 - 06 - A Hard Day's Night.mp3:52281:0:0
+The Beatles - 1 - 07 - I Feel Fine.mp3:46281:0:0
+The Beatles - 1 - 08 - Eight Days A Week.mp3:48281:0:0
+The Beatles - 1 - 09 - Ticket To Ride.mp3:44281:0:0
+The Beatles - 1 - 10 - Help!.mp3:50281:0:0
+The Beatles - 1 - 11 - Yesterday.mp3:45281:0:0
+The Beatles - 1 - 12 - Day Tripper.mp3:35281:0:0
+The Beatles - 1 - 13 - We Can Work It Out.mp3:42281:0:0
+The Beatles - 1 - 14 - Paperback Writer.mp3:38281:0:0
+The Beatles - 1 - 15 - Yellow Submarine.mp3:55281:0:0
+The Beatles - 1 - 16 - Eleanor Rigby.mp3:34281:0:0
+The Beatles - 1 - 17 - Penny Lane.mp3:32281:0:0
+The Beatles - 1 - 18 - All You Need Is Love.mp3:40281:0:0
+The Beatles - 1 - 19 - Hello Goodbye.mp3:36281:0:0
+The Beatles - 1 - 20 - Lady Madonna.mp3:22281:0:0
+The Beatles - 1 - 21 - Hey Jude.mp3:25281:0:0
+The Beatles - 1 - 22 - Get Back.mp3:28281:0:0
+The Beatles - 1 - 23 - The Ballad Of John And Yoko.mp3:24281:0:0
+The Beatles - 1 - 24 - Something.mp3:20281:0:0
+The Beatles - 1 - 25 - Come Together.mp3:26281:0:0
+The Beatles - 1 - 26 - Let It Be.mp3:30281:0:0
+The Beatles - 1 - 27 - The Long And Winding Road.mp3:18281:0:0
 The Challenge.mp3:69696:100:1
 The Derp Song.mp3:13130:0:0
 The Duck Song.mp3:11088:0:0
@@ -1451,8 +1516,7 @@ Troll Song (shortened).mp3:41337:0:0
 Turn Around.mp3:131313:0:0
 Ultimate Battle - Laura Shigihara.mp3:16380:0:0
 Ultimate Destruction - TMM43.mp3:43043:0:7
-Undying Wish ~ The Villain's Reckoning - DM DOKURO.mp3:10945:0:10
-Unholy Insurgency - Theme of Providence, The Profaned God - Terraria Calamity Mod Music.mp3:12945:0:10
+Undying Wish ~ The Villain's Reckoning - DM DOKURO.mp3:9945:0:10
 Viking Arena.mp3:29230:34:0
 Vs Fark - Falk Au Yeong.mp3:18810:0:0
 Vsauce music [full].mp3:26332:0:0
