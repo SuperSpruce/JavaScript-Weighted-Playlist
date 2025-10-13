@@ -1412,10 +1412,10 @@ The Beatles - 1 - 11 - Yesterday.mp3:45281:0:0
 The Beatles - 1 - 12 - Day Tripper.mp3:35281:0:0
 The Beatles - 1 - 13 - We Can Work It Out.mp3:42281:0:0
 The Beatles - 1 - 14 - Paperback Writer.mp3:38281:0:0
-The Beatles - 1 - 15 - Yellow Submarine.mp3:55281:0:0
+The Beatles - 1 - 15 - Yellow Submarine.mp3:40281:0:0
 The Beatles - 1 - 16 - Eleanor Rigby.mp3:34281:0:0
 The Beatles - 1 - 17 - Penny Lane.mp3:32281:0:0
-The Beatles - 1 - 18 - All You Need Is Love.mp3:40281:0:0
+The Beatles - 1 - 18 - All You Need Is Love.mp3:55281:0:0
 The Beatles - 1 - 19 - Hello Goodbye.mp3:36281:0:0
 The Beatles - 1 - 20 - Lady Madonna.mp3:22281:0:0
 The Beatles - 1 - 21 - Hey Jude.mp3:25281:0:0
