@@ -80,6 +80,7 @@ Another Medium - Undertale OST_ 051.mp3:22222:0:1
 Armor Town - WayForward.mp3:21060:0:8
 Aruku Sugata Ha Yuri No Hana (Yuzuriha Theme) (UNI2 Mix) - Raito.mp3:29106:0:7
 At the Speed of Light (ID_ 467339).mp3:3456789:-10:5
+AWOLNATION - Run (full).mp3:10584:0:0
 Babaroque - cYsmix.mp3:18400:0:3
 Balatro Main Theme.mp3:155522:0:0
 Balatro Tarot Pack Theme.mp3:55522:0:0
@@ -130,10 +131,58 @@ Chemical Imbalance - Nighthawk22.mp3:35022:0:2
 Chess Titans Capture.mp3:390000:0:0
 Chess Titans Check Checkity Check.mp3:243470:0:0
 Chess Titans Lose.mp3:12500:0:0
-Chess Titans Move.mp3:1853327:0:0
+Chess Titans Move.mp3:1601149:0:0
 Chess Titans Win.mp3:12500:0:0
 Chicken Soup.mp3:39086:0:0
 Children Yay! - Sound Effect.mp3:25125:0:0
+Chordian 1 - The_Alibi_D00.mp3:20734:0:0
+Chordian 1 - Colgate_Title.mp3:28734:0:0
+Chordian 1 - Colgate_Hiscore.mp3:14734:0:0
+Chordian 1 - Colgate_Bonus.mp3:11734:0:0
+Chordian 1 - Crooner_D00.mp3:18734:0:0
+Chordian 1 - Film-Zak_D00.mp3:17734:0:0
+Chordian 1 - Gone_D00.mp3:16734:0:0
+Chordian 1 - Gorgeous_D01.mp3:12734:0:0
+Chordian 1 - Instrument_Test_8_D00.mp3:25734:0:0
+Chordian 1 - Phase_D00.mp3:30734:0:0
+Chordian 1 - Platest_D00.mp3:40734:0:0
+Chordian 1 - Rolling_D00.mp3:15734:0:0
+Chordian 1 - Stardream_D00.mp3:10734:0:0
+Chordian 1 - Strike_Force_D00.mp3:13734:0:0
+Chordian 1 - Synchro.mp3:35734:0:0
+Chordian Amiga - 01_Magic.mp3:36634:0:0
+Chordian Amiga - 02_Wake_Up.mp3:20634:0:0
+Chordian Amiga - 03_Darkness_IV.mp3:16634:0:0
+Chordian Amiga - 04_Miami.mp3:13634:0:0
+Chordian Amiga - 05_I_Remember.mp3:8634:0:0
+Chordian FastTracker II - Acid_Jazz.mp3:25534:0:0
+Chordian FastTracker II - Ara.mp3:15534:0:0
+Chordian FastTracker II - Bambi_Funk.mp3:15434:0:0
+Chordian FastTracker II - Calvin_Shuffle.mp3:20434:0:0
+Chordian FastTracker II - Commercial_Rhythm.mp3:16534:0:0
+Chordian FastTracker II - Cute_Tune.mp3:25434:0:0
+Chordian FastTracker II - Dim_Jingle.mp3:16534:0:0
+Chordian FastTracker II - Drum_Test.mp3:24434:0:0
+Chordian FastTracker II - Erik_Instrument_Test.mp3:11434:0:0
+Chordian FastTracker II - Fuse_Intro.mp3:30434:0:0
+Chordian FastTracker II - Guard.mp3:14434:0:0
+Chordian FastTracker II - Heaven_Revived.mp3:10534:0:0
+Chordian FastTracker II - Joey_Folky.mp3:18434:0:0
+Chordian FastTracker II - Jolly_Game_Console_Tune.mp3:12434:0:0
+Chordian FastTracker II - Little_Zig.mp3:9534:0:0
+Chordian FastTracker II - Memories.mp3:28534:0:0
+Chordian FastTracker II - My_Dog_is_Dead.mp3:23434:0:0
+Chordian FastTracker II - Orchy.mp3:13434:0:0
+Chordian FastTracker II - Pinocchio.mp3:17534:0:0
+Chordian FastTracker II - Pylon.mp3:19534:0:0
+Chordian FastTracker II - Simple_Does_It.mp3:11534:0:0
+Chordian FastTracker II - Stardust.mp3:21434:0:0
+Chordian FastTracker II - Starring.mp3:21534:0:0
+Chordian FastTracker II - Superhero_Music.mp3:12534:0:0
+Chordian FastTracker II - Sweet_Kettle.mp3:17434:0:0
+Chordian FastTracker II - Task_III_Hiscore.mp3:8534:-99:0
+Chordian FastTracker II - Thunderwaves.mp3:13534:0:0
+Chordian FastTracker II - Weird_Drums.mp3:22434:0:0
 Clash _ Ninety9Lives release - Trip40.mp3:9940:0:9
 Clash of Clans - Builder Base Music Soundtrack 2017 [DOWNLOAD].mp3:50:0:0
 Clash of Clans Background Music All Soundtracks.mp3:100:0:0
@@ -274,6 +323,7 @@ DM DOKURO - The Tale of a Cruel World - 42 Open Frenzy (16-bit Mix).mp3:2723:0:4
 DM DOKURO - The Tale of a Cruel World - 43 Antarctic Reinforcement (Structured Mix).mp3:2623:0:4
 DM DOKURO - The Tale of a Cruel World - 44 Siren's Call (Seafoam Mix).mp3:1723:0:4
 DM DOKURO - The Tale of a Cruel World - 45 Scourge of the Universe (Eulogy for the Ego).mp3:3945:0:0
+DM DOKURO - The Tale of a Cruel World - 46 Tyrant (Part 1).mp3:3723:0:0
 Dodo - CHOMPO & meganeko.mp3:12190:0:5
 Don't Stop Believin'.mp3:24988:0:0
 Double Kill Sound Effect.mp3:30002:0:0
@@ -556,6 +606,8 @@ Make Game Music - The Jrose11 OST - 53 Castle Vampire.mp3:18211:0:0
 Make Game Music - The Jrose11 OST - 54 Dracula's Rise.mp3:14211:0:0
 Make Game Music - The Jrose11 OST - 55 Vampire Rock.mp3:9211:-99:0
 Make Game Music - The Jrose11 OST - 56 Mega Napalm.mp3:15711:0:0
+Make Game Music - The Jrose11 OST - 57 Mega Charge.mp3:14711:0:0
+Make Game Music - The Jrose11 OST - 58 Mega Gravity.mp3:13711:0:0
 Mantle That Conceals Light - Gore Magala (From Monster Hunter 4) - FalKKonE.mp3:12091:0:10
 Mario 64 Bob-omb Battlefield Theme.mp3:64640:0:0
 Mario 64 File Select.mp3:128064:0:0
@@ -752,6 +804,7 @@ Pkmn G2 Goldenrod City.mp3:125000:0:0
 Pkmn G2 Lavender Town.mp3:42000:0:0
 Pkmn G2 LL.mp3:11000:0:0
 Pkmn G2 LS.mp3:88000:0:0
+Pkmn G2 National Park.mp3:59251:0:0
 Pkmn G2 New Bark Town.mp3:179251:0:0
 Pkmn G2 Pallet Town.mp3:52000:0:0
 Pkmn G2 Prof. Elm's Lab.mp3:140251:0:0
@@ -1235,6 +1288,7 @@ Rickroll 6.mp3:41069:0:0
 Rickroll 7.mp3:40069:0:0
 Ride of the Valkyries.mp3:30103:0:2
 Round 1.mp3:17074:0:10
+Run drop meme.mp3:52969:0:10
 Running in the 90's.mp3:91990:0:9
 RUSH 4'33 2.mp3:4330:0:0
 RUSH 4'33.mp3:43300:0:0
@@ -1373,6 +1427,17 @@ Star Wars Imperial March (short).mp3:8977:-99:0
 Star Wars Main Theme (long).mp3:4977:-99:0
 Star Wars Main Theme (medium).mp3:5977:-99:0
 Star Wars Main Theme (short).mp3:6977:-99:0
+Starship Velociraptor - 01 Glory or Gold.mp3:20656:0:5
+Starship Velociraptor - 02 Best Band in the Universe (feat. Ninja Brian).mp3:19656:0:5
+Starship Velociraptor - 03 Settle it With a Swordfight.mp3:18656:0:5
+Starship Velociraptor - 04 Hyperspeed.mp3:17656:0:5
+Starship Velociraptor - 05 Army of Tigers.mp3:16656:0:5
+Starship Velociraptor - 06 Storm the Castle.mp3:15656:0:5
+Starship Velociraptor - 07 Starship Velociraptor.mp3:14656:0:5
+Starship Velociraptor - 08 Man the Cannons.mp3:13656:0:5
+Starship Velociraptor - 09 Jetpack Race.mp3:12656:0:5
+Starship Velociraptor - 10 10,000 Light-Years.mp3:11656:0:5
+Starship Velociraptor - 11 Final Frontier.mp3:10656:0:5
 Stevia Sphere - Polar Bears.mp3:22286:0:0
 Stevia Sphere - Sitting on the bus, looking out the window.mp3:9286:-99:0
 Stick Bug song (Bee Swarm Simulator).mp3:10101:0:0
@@ -1425,6 +1490,7 @@ The Beatles - 1 - 24 - Something.mp3:20281:0:0
 The Beatles - 1 - 25 - Come Together.mp3:26281:0:0
 The Beatles - 1 - 26 - Let It Be.mp3:30281:0:0
 The Beatles - 1 - 27 - The Long And Winding Road.mp3:18281:0:0
+The Beatles - I Am The Walrus (Remastered 2009).mp3:15281:0:0
 The Challenge.mp3:69696:100:1
 The Derp Song.mp3:13130:0:0
 The Duck Song.mp3:11088:0:0
