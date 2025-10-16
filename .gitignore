@@ -2,5 +2,5 @@
 *.ods
 .vs/
 Music/
-Databases/
+Databases/*.db*
 music.txt

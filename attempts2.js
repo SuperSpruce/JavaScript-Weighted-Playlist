@@ -32,6 +32,7 @@ var halfSpeed = false;
 var m = new MersenneTwister();
 var currentSongID = -1;
 var nextSongID = -1;
+let currentSongSnapshot = [];
 var playbackSpeed = 1.12;
 
 var currentDuration = -1;
@@ -132,13 +133,16 @@ async function skipToNextTrack() {
         sourceNode = null;
     }
 
-    currentSongID = nextSongID;
-
     // make sure the next buffer is ready
     if (!buffer1 && loadingPromise) {
         console.log("Waiting for preload to finish...");
         await loadingPromise;
     }
+
+    if(databaseActive) {
+        addSQLiteLine(currentSongSnapshot[0], currentSongSnapshot[1], currentSongSnapshot[2]);
+    }
+    currentSongID = nextSongID;
 
     const buffer = buffer1;
     buffer1 = null;
@@ -151,6 +155,7 @@ async function skipToNextTrack() {
     frames = 0;
     difficultyID = Number(songList[currentSongID][2]);
     console.log(songList[currentSongID][0]);
+    currentSongSnapshot = [currentSongID, 0, 0];
     //console.log("  Street Triple weight: " + Number(songList[currentSongID][1]));
     if(difficultyID >= 0) {
         difficulty = difficultyID;
@@ -195,11 +200,15 @@ async function start() {
             console.log("Enabling workout mode!");
         }
     }
+    else {
+        databaseActive = false;
+    }
 
     let firstSongs = pickSongs(2);
     currentSongID = firstSongs.pop();
     let firstSong = songList[currentSongID];
 
+    currentSongSnapshot = [currentSongID, 0, 0];
     console.log("Music/" + firstSong[0]);
     const firstBuffer = await loadTrack("Music/" + firstSong[0]);
     difficultyID = Number(firstSong[2]);
@@ -264,8 +273,17 @@ function setPlaybackSpeed() {
     playbackColor.style.color = `rgb(${red}, ${green}, ${blue})`;
     playbackRateDisplay.innerHTML = playbackSpeed.toFixed(3);
     halfSpeedDisplay.innerHTML = addendumStr;
-    let modeRR = Number(songList[currentSongID][2]) != 0 ? 1 : (mode == 0 ? 1 : 1/mode)
-    relativeRarityDisplay2.innerHTML = (modeRR*rarityModifier*1000000/getModifiedWeight()/Math.exp(-1/2*semitoneC*semitoneC)).toFixed(1);
+    let modeRR = Number(songList[currentSongID][2]) != 0 ? 1 : (mode == 0 ? 1 : 1/mode);
+    let relativeRarity = (modeRR*rarityModifier*1000000/getModifiedWeight()/Math.exp(-1/2*semitoneC*semitoneC));
+    relativeRarityDisplay2.innerHTML = relativeRarity.toFixed(1);
+
+    if(databaseActive) {
+        dbPlaybackInfo[0] = workoutMode ? 10 : 0;
+        if(halfSpeed == 1) dbPlaybackInfo[0] += 1;
+        else if(halfSpeed == -1) dbPlaybackInfo[0] += 2;
+        dbPlaybackInfo[1] = semitones;
+        dbPlaybackInfo[2] = relativeRarity;
+    }
     return playbackSpeed;
 }
 
@@ -337,23 +355,25 @@ function runAttempt() {
     r = m.random() * (thresh + difficulty*playbackSpeed*elapsed/10);
     let prevDiff = difficulty;
     if(r > thresh) {
-        console.log((Number(prevDiff)).toFixed(0) + "cc wheelies  " + percent + "% ");
+        console.log((Number(prevDiff)).toFixed(0) + "cc wheelies  " + percent.toFixed(0) + "% ");
+        currentSongSnapshot[1] = percent.toFixed(2);
+        currentSongSnapshot[2] = prevDiff;
         r = 1;
         skipToNextTrack();
     }
     currentTime = (Date.now() - startTime) / 1000;
     if(difficultyID < 0 && difficultyID != -99) {
         difficulty = calculateDifficulty(difficultyID*-1);
-        percentDisplay.innerHTML = percent;
+        percentDisplay.innerHTML = percent.toFixed(0);
     }
     else if(difficultyID == 0 || difficultyID == -99) {
         difficulty = 0;
-        percent = (100*currentTime / currentDuration).toFixed(0);
-        percentDisplay.innerHTML = percent;
+        percent = (100*currentTime / currentDuration);
+        percentDisplay.innerHTML = percent.toFixed(0);
     }
     else {
-        percent = Math.min(100,(100*currentTime / (currentDuration-3))).toFixed(0);
-        percentDisplay.innerHTML = percent;
+        percent = Math.min(100,(100*currentTime / (currentDuration-3)));
+        percentDisplay.innerHTML = percent.toFixed(0);
     }
     if(prevDiff != difficulty) difficultyDisplay.innerHTML = Math.round(difficulty);
     setDifficultyColor();
@@ -371,7 +391,7 @@ function calculateDifficulty(id) {
     }
     switch(id) {
         case 1: // Stereo Madness
-            percent = Math.min(100, Math.max(0, c*100/84)).toFixed(0);
+            percent = Math.min(100, Math.max(0, c*100/84));
             if(c > 1.5 && c <= 1.6) return 250;
             else if(c > 3.0 && c <= 3.1) return 100;
             else if(c > 4.5 && c <= 6.0) return 25;
@@ -387,7 +407,7 @@ function calculateDifficulty(id) {
             }
             else return 0;
         case 2: // Can't Let Go
-            percent = Math.min(100, Math.max(0, c*100/81)).toFixed(0);
+            percent = Math.min(100, Math.max(0, c*100/81));
             if(c < 24) return 18;
             else if(c < 46.7) return 20;
             else if(c < 58) return 14;
@@ -395,7 +415,7 @@ function calculateDifficulty(id) {
             else if(c < 80) return 24;
             else return 0;
         case 3: // Electrodynamix
-            percent = Math.min(100, Math.max(0, c*100/81.5)).toFixed(0);
+            percent = Math.min(100, Math.max(0, c*100/81.5));
             if(c < 6) return 20;
             else if(c > 8 && c < 37.5) return 100;
             else if(c >= 37.5 && c < 53) return 50;
@@ -405,7 +425,7 @@ function calculateDifficulty(id) {
             }
             else return 0;
         case 4: // Clubstep
-            percent = Math.min(100, Math.max(0, c*100/87)).toFixed(0);
+            percent = Math.min(100, Math.max(0, c*100/87));
             if(c < 20) {
                 if(c > 2) return 100;
                 else if(c > 1.5 && c <= 1.6) return 200;
@@ -422,7 +442,7 @@ function calculateDifficulty(id) {
             else if(c > 83 && c <= 86) return 280;
             else return 0;
         case 5: // ToE2
-            percent = Math.min(100, Math.max(0, c*100/90)).toFixed(0);
+            percent = Math.min(100, Math.max(0, c*100/90));
             if(c <= 12) return 72;
             else if(c <= 15.5) return 288;
             else if(c <= 33.5) return 180;
@@ -434,7 +454,7 @@ function calculateDifficulty(id) {
             else if(c <= 75.5) return 720;
             else return 234;
         case 6: // Deadlocked
-            percent = Math.min(100, Math.max(0, c*100/100.5)).toFixed(0);
+            percent = Math.min(100, Math.max(0, c*100/100.5));
             if(c <= 14.5) return 100;
             else if(c <= 18) return 500;
             else if(c <= 21.5) return 250;
@@ -447,7 +467,7 @@ function calculateDifficulty(id) {
             else if(c <= 99.5) return 100;
             else return 0;
         case 7: // Jawbreaker
-            percent = Math.min(100, Math.max(0, c*100/61.7)).toFixed(0);
+            percent = Math.min(100, Math.max(0, c*100/61.7));
             if(c < 8.8) return 110;
             else if(c < 17.2) return 330;
             else if(c < 24) return 10;
@@ -455,7 +475,7 @@ function calculateDifficulty(id) {
             else return 770;
         case 8: // TheFatRat: Windfall (Evil Flowers)
             c = currentTime * playbackSpeed + 21;
-            percent = Math.min(100, Math.max(0, (c-21)/85*100)).toFixed(0);
+            percent = Math.min(100, Math.max(0, (c-21)/85*100));
             if(c < 21) {currentTime = 21; return 0;}
             else if(c >= 22 && c < 22.1) return 1000;
             else if(c >= 22.5 && c < 57) return 200+2*c;
@@ -467,7 +487,7 @@ function calculateDifficulty(id) {
             else if(c >= 104.9 && c < 105) return 2000;
             else return 0;
         case 9: // Sonic Wave
-            percent = Math.min(100, Math.max(0, c*100/121.8)).toFixed(0);
+            percent = Math.min(100, Math.max(0, c*100/121.8));
             if(c < 13.2) return 350;
             else if(c < 26.4) return 650;
             else if(c < 39.6) return 20*c;
@@ -486,7 +506,7 @@ function calculateDifficulty(id) {
             //cataclysmBloodbathBloodlust();
             return 0;
         case 12: // GD Galaxy Collapse
-            percent = Math.min(100, Math.max(0, c*100/219.7)).toFixed(0);
+            percent = Math.min(100, Math.max(0, c*100/219.7));
             if(c < 0.7) return 0;
             else if(c < 7) return  400;
             else if(c < 13.8) return  500;
@@ -510,7 +530,7 @@ function calculateDifficulty(id) {
             else if(c < 218.7) return 10000;
             else return 0;
         case 13: // 454 Galaxy Collapse
-            percent = Math.min(100, Math.max(0, c*100/295.5)).toFixed(0);
+            percent = Math.min(100, Math.max(0, c*100/295.5));
             if(c > 295.5) return 0;
             else if(c < 18) return 10;
             else if(c < 18.5) return 10000;
@@ -555,17 +575,17 @@ function calculateDifficulty(id) {
             else if(c < 293.5) return 200;
             else return 1000;
         case 14: // BOMBA drop
-            percent = Math.min(100, Math.max(0, c*100/59)).toFixed(0);
+            percent = Math.min(100, Math.max(0, c*100/59));
             if(c < 59) return 200+5*Math.pow(c, 1.25);
             else return 0;
         case 15: // Black Blizzard
-            percent = Math.min(100, c*100/188).toFixed(0);
+            percent = Math.min(100, c*100/188);
             return 100 + 5000/(c+2);
         case 16: // Train Rush
-            percent = Math.min(100, c*100/293).toFixed(0);
+            percent = Math.min(100, c*100/293);
             return 50 + c/3;
         case 17: // Artificial Ascent
-            percent = Math.min(100, c*100/143).toFixed(0);
+            percent = Math.min(100, c*100/143);
             if(c < 10) return 100;
             else if(c < 11) return 1000;
             else if(c < 20) return 300;
@@ -589,7 +609,7 @@ function calculateDifficulty(id) {
         case 99: // Fabled check, not a difficulty related thing
             return 0;
         case 101: // Cataclysm
-            percent = Math.min(100, Math.max(0, c*100/77.2)).toFixed(0);
+            percent = Math.min(100, Math.max(0, c*100/77.2));
             if(c < 6) return 120;
             else if(c < 11.6) return 1200;
             else if(c < 14.5) return 0;
@@ -601,7 +621,7 @@ function calculateDifficulty(id) {
             else return 0;
         case 102: // Bloodbath
             c = currentTime * playbackSpeed + 81;
-            percent = Math.min(100, Math.max(0, (c-81)/112.3*100)).toFixed(0);
+            percent = Math.min(100, Math.max(0, (c-81)/112.3*100));
             if(c < 82) return 0;
             else if(c < 89) return 600;
             else if(c < 92) return 540;
@@ -620,7 +640,7 @@ function calculateDifficulty(id) {
             else return 0;
         case 103: // Bloodlust
             c = currentTime * playbackSpeed + 75;
-            percent = Math.min(100, Math.max(0, (c-75)/168.3*100)).toFixed(0);
+            percent = Math.min(100, Math.max(0, (c-75)/168.3*100));
             if(c < 76) return 0;
             else if(c < 81) return 900;
             else if(c < 89) return 600;
