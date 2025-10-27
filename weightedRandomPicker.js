@@ -94,9 +94,11 @@ function returnFrequencyData(rarityData = [2000, 10000, 30000, 80000, 200000, 1e
       data.push([sCount, wCount, wCount/songPicker.totalWeight, songPicker.totalWeight/wCount]);
       sCount = wCount = 0;
       rIndex++;
+	  i--;
+	  continue;
     }
-    sCount++;
-    wCount += sorted[i][0];
+	sCount++;
+	wCount += sorted[i][0];
   }
   data.push([sCount, wCount, wCount/songPicker.totalWeight, songPicker.totalWeight/wCount]);
   return data;
