@@ -131,7 +131,7 @@ Chemical Imbalance - Nighthawk22.mp3:35022:0:2
 Chess Titans Capture.mp3:390000:0:0
 Chess Titans Check Checkity Check.mp3:243470:0:0
 Chess Titans Lose.mp3:12500:0:0
-Chess Titans Move.mp3:1777777:0:0
+Chess Titans Move.mp3:2189808:0:0
 Chess Titans Win.mp3:12500:0:0
 Chicken Soup.mp3:39086:0:0
 Children Yay! - Sound Effect.mp3:25125:0:0
@@ -324,6 +324,20 @@ DM DOKURO - The Tale of a Cruel World - 43 Antarctic Reinforcement (Structured M
 DM DOKURO - The Tale of a Cruel World - 44 Siren's Call (Seafoam Mix).mp3:1723:0:4
 DM DOKURO - The Tale of a Cruel World - 45 Scourge of the Universe (Eulogy for the Ego).mp3:3945:0:0
 DM DOKURO - The Tale of a Cruel World - 46 Tyrant (Part 1).mp3:3723:0:0
+DM DOKURO - UNDERTALE- The Underground Radio - 01 The Underground Radio.mp3:10923:0:10
+DM DOKURO - UNDERTALE- The Underground Radio - 02 BONESCUFFLE.mp3:8923:0:10
+DM DOKURO - UNDERTALE- The Underground Radio - 03 The Dapper Mannequin Bakery.mp3:9923:0:10
+DM DOKURO - UNDERTALE- The Underground Radio - 04 Septisicle.mp3:7923:0:0
+DM DOKURO - UNDERTALE- The Underground Radio - 05 uNDeRWoRLD MoNaRCHy.mp3:4923:0:10
+DM DOKURO - UNDERTALE- The Underground Radio - 06 g a r d e n.mp3:3923:0:10
+DM DOKURO - UNDERTALE- The Underground Radio - 07 SAVE.mp3:5923:0:10
+DM DOKURO - UNDERTALE- The Underground Radio - 08 Dino Dork.mp3:9823:0:0
+DM DOKURO - UNDERTALE- The Underground Radio - 09 Sign Language.mp3:6823:0:0
+DM DOKURO - UNDERTALE- The Underground Radio - 10 Undying Wish ~ The Villain's Reckoning.mp3:9945:0:10
+DM DOKURO - UNDERTALE- The Underground Radio - 11 Reality Check Through The Skull.mp3:4945:0:10
+DM DOKURO - UNDERTALE- The Underground Radio - 12 COMMON CORE.mp3:5823:0:10
+DM DOKURO - UNDERTALE- The Underground Radio - 13 Underground Static.mp3:3823:0:0
+DM DOKURO - UNDERTALE- The Underground Radio - 14 SAVE (Encore).mp3:2923:0:10
 Dodo - CHOMPO & meganeko.mp3:12190:0:5
 Don't Stop Believin'.mp3:24988:0:0
 Double Kill Sound Effect.mp3:30002:0:0
@@ -339,6 +353,17 @@ Electric Rebel - Astalos (Old Version) [From Monster Hunter Generations] - FalKK
 Embers Instrumental.mp3:19074:0:10
 Energy - Absolute Valentine.mp3:22536:0:0
 Eye Of The Tiger.mp3:19770:0:0
+FalKKonE - The Intense Past - 01 Phoenix (Intense Version).mp3:19191:0:10
+FalKKonE - The Intense Past - 02 The Evil That Lurks Behind (Intense Version).mp3:11191:0:10
+FalKKonE - The Intense Past - 03 Rose in the Rain (Intense Version).mp3:13191:0:10
+FalKKonE - The Intense Past - 04 Astrolabium (Intense Version).mp3:10191:0:10
+FalKKonE - The Intense Past - 05 no title (125m@165D).mp3:15191:0:10
+FalKKonE - The Intense Past - 06 Deathchase (Intense Version).mp3:8191:0:10
+FalKKonE - The Intense Past - 07 For Those Who Keep Anxiety In Their Hearts.mp3:26191:0:0
+FalKKonE - The Intense Past - 08 Blinking Stars.mp3:22191:0:0
+FalKKonE - The Intense Past - 09 Moonless Night.mp3:18191:0:0
+FalKKonE - The Intense Past - 10 A Peaceful Land (Piano Version).mp3:29191:0:0
+FalKKonE - The Intense Past - 11 A Peaceful Land (Original Version).mp3:21191:0:0
 Fight and Flight - flashygoodness.mp3:28435:0:3
 Fighter Select - flashygoodness.mp3:40435:0:3
 Fighter Select 2 - flashygoodness.mp3:20435:0:3
@@ -613,10 +638,13 @@ Make Game Music - The Jrose11 OST - 56 Mega Napalm.mp3:15711:0:0
 Make Game Music - The Jrose11 OST - 57 Mega Charge.mp3:14711:0:0
 Make Game Music - The Jrose11 OST - 58 Mega Gravity.mp3:13711:0:0
 Mantle That Conceals Light - Gore Magala (From Monster Hunter 4) - FalKKonE.mp3:12091:0:10
-Mario 64 Bob-omb Battlefield Theme.mp3:64640:0:0
+Mario 64 Bob-omb Battlefield Theme.mp3:96064:0:0
+Mario 64 Castle.mp3:192064:0:0
+Mario 64 Cool Cool Mountain.mp3:48064:0:0
+Mario 64 Dire Dire Docks.mp3:40064:0:0
 Mario 64 File Select.mp3:128064:0:0
-Mario Kart 64 Circuit Theme.mp3:64064:0:1
-Mario Kart Double Dash Circuit Theme.mp3:40440:0:1
+Mario Kart 64 Circuit Theme.mp3:64640:0:1
+Mario Kart Double Dash Circuit Theme.mp3:40440:0:2
 Masked Dedede Theme.mp3:34343:0:10
 Mefewe dies at 98 on Sonic Wave.mp3:4098:0:0
 Megalovania.mp3:26669:0:10
@@ -1343,7 +1371,6 @@ Press Start.mp3:28500:30:10
 Proof of a Hero (Old Version) [From Monster Hunter] - FalKKonE.mp3:5091:0:10
 quack.mp3:34365:0:0
 R1 acceleration jump and wheelie.mp3:18000:1000:0
-Reality Check Through the Skull - DM DOKURO.mp3:4945:0:10
 Realm Grinder Evil Alignment - Visioni di fiamma.mp3:19187:0:2
 Realm Grinder Good Alignment - Cavalcando nel sole nascente.mp3:17187:0:0
 Realm Grinder Neutral Alignment - Tempi d'oro.mp3:18187:0:0
@@ -1666,7 +1693,6 @@ Troll Song (shortened).mp3:41337:0:0
 Turn Around.mp3:131313:0:0
 Ultimate Battle - Laura Shigihara.mp3:16380:0:0
 Ultimate Destruction - TMM43.mp3:43043:0:7
-Undying Wish ~ The Villain's Reckoning - DM DOKURO.mp3:9945:0:10
 Viking Arena.mp3:29230:34:0
 Vs Fark - Falk Au Yeong.mp3:18810:0:0
 Vsauce music [full].mp3:26332:0:0
