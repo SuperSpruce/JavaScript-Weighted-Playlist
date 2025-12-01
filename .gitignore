@@ -3,4 +3,5 @@
 .vs/
 Music/
 Databases/*.db*
+Databases/*.sqbpro*
 music.txt
