@@ -1,5 +1,5 @@
 # JavaScript-Weighted-Playlist
-I am releasing to the public the inner workings of my treasured JavaScript Weighted Playlist.
+I am releasing to the public the inner workings of my treasured JavaScript Weighted Playlist. (But not the music, of course!)
 
 ## Weighted playlist? What?
 In a weighted playlist, all songs have a weight that determines how often it will be played. For an example, let's have a playlist with 2 songs. Song A has a weight of 1 and song B has a weight of 3. The sum of weights is 4. Song A has a 1/4 chance of playing, and song B has a 3/4 chance of playing. Because each "roll" is random and independent, the same song can play twice (or more!) in a row.
